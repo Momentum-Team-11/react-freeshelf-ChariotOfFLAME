@@ -6,10 +6,21 @@ const Book = (book) => {
       <div className='bookDeets'>
         <h2>{title}</h2>
         <h3>{author}</h3>
-        <a href={`${url}`}>{title} Homepage</a>
         <p>{shortdesc}</p>
-        <p>{pub}</p>
-        <p>{pubDate}</p>
+        <p>
+          <i>Disclosure would go here</i>
+        </p>
+        <a href={`${url}`}>{title} Homepage</a>
+        <p>
+          <b>Publisher:</b> {pub}
+        </p>
+        <p>
+          <b>Publication Date:</b> {pubDate}
+        </p>
+        <br></br>
+        <p>
+          <b>Full Decription:</b>
+        </p>
         <p>{longdesc}</p>
       </div>
       <div className='bookThumb'>
