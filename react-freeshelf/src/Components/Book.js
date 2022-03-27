@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 const Book = (book) => {
-  const { title, author, url, shortdesc, thumb, pub, pubDate, longdesc, idx } =
-    book;
+  const { title, author, url, shortdesc, thumb, pub, pubDate, longdesc } = book;
   const [hidden, setHidden] = useState(true);
 
   return (
