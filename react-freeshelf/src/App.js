@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <h1>Books</h1>
-      {booksData.map((book) => {
+      {booksData.map((book, idx) => {
         return (
           <Book
             title={book.title}
@@ -16,7 +16,7 @@ const App = () => {
             pub={book.publisher}
             pubDate={book.publicationDate}
             longdesc={book.detailedDescription}
-            key={book.idx}
+            key={idx}
           />
         );
       })}
